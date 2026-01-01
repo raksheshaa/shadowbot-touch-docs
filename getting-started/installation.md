@@ -1,28 +1,33 @@
-# Installation
+---
+description: >-
+  Ce guide vous accompagne dans l'installation de ShadowBot Touch sur votre
+  système.
+---
 
-Ce guide vous accompagne dans l'installation de ShadowBot Touch sur votre système.
+# Installation
 
 ## Prérequis système
 
 ### Configuration minimale
 
-- **OS** : Windows 10+, macOS 10.15+, ou Linux (Ubuntu 20.04+)
-- **Node.js** : Version 16.x ou supérieure
-- **RAM** : 4 Go minimum (8 Go recommandé)
-- **Espace disque** : 500 Mo pour l'application + espace pour les logs
+* **OS** : Windows 10+, macOS 10.15+, ou Linux (Ubuntu 20.04+)
+* **Node.js** : Version 16.x ou supérieure
+* **RAM** : 4 Go minimum (8 Go recommandé)
+* **Espace disque** : 500 Mo pour l'application + espace pour les logs
 
 ### Logiciels requis
 
-1. **Node.js et npm**
-   - Téléchargez depuis [nodejs.org](https://nodejs.org/)
-   - Vérifiez l'installation :
-   ```bash
-   node --version  # Devrait afficher v16.x.x ou supérieur
-   npm --version   # Devrait afficher 8.x.x ou supérieur
-   ```
+1.  **Node.js et npm**
 
+    * Téléchargez depuis [nodejs.org](https://nodejs.org/)
+    * Vérifiez l'installation :
+
+    ```bash
+    node --version  # Devrait afficher v16.x.x ou supérieur
+    npm --version   # Devrait afficher 8.x.x ou supérieur
+    ```
 2. **Git** (optionnel, mais recommandé)
-   - Téléchargez depuis [git-scm.com](https://git-scm.com/)
+   * Téléchargez depuis [git-scm.com](https://git-scm.com/)
 
 ## Méthode 1 : Installation depuis les sources
 
@@ -42,10 +47,11 @@ npm install
 ```
 
 Cette commande installera toutes les dépendances nécessaires, notamment :
-- Express pour le serveur web
-- sql.js pour la base de données
-- Primus/WebSocket pour la communication
-- Et d'autres modules auxiliaires
+
+* Express pour le serveur web
+* sql.js pour la base de données
+* Primus/WebSocket pour la communication
+* Et d'autres modules auxiliaires
 
 ### Étape 3 : Configuration initiale
 
@@ -56,9 +62,10 @@ cp config.example.json config.json
 ```
 
 Éditez `config.json` pour personnaliser :
-- Port du serveur (par défaut : 3000)
-- Clé API initiale
-- Paramètres de base de données
+
+* Port du serveur (par défaut : 3000)
+* Clé API initiale
+* Paramètres de base de données
 
 ### Étape 4 : Lancer l'application
 
@@ -67,6 +74,7 @@ npm start
 ```
 
 L'application devrait démarrer et afficher :
+
 ```
 🚀 ShadowBot Touch démarré sur http://localhost:3000
 🔒 Authentification activée - Utilisez votre clé API
@@ -76,7 +84,7 @@ L'application devrait démarrer et afficher :
 
 ### Prérequis
 
-- Docker Desktop installé ([docker.com](https://www.docker.com/))
+* Docker Desktop installé ([docker.com](https://www.docker.com/))
 
 ### Étapes
 
@@ -148,6 +156,6 @@ cd ..
 rm -rf shadowbot-touch
 ```
 
----
+***
 
 **Prochaine étape** : [Configuration initiale](configuration.md) pour personnaliser votre installation.
